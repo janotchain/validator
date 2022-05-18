@@ -23,7 +23,7 @@ go build main.go
 
 # Initialize validator dir
 echo "Initializing validator directory.."
-./main ibft init --data-dir akhiranode && cp ../genesis.json . && chmod +x genesis.json
+cp ../genesis.json . && chmod +x genesis.json
 echo
 
 ## Show private key
