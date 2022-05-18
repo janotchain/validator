@@ -7,7 +7,7 @@ cd /etc/systemd/system
 echo "Starting akhira service..."
 echo "
 	[Unit]
-	Description=SX Node Service
+	Description=Akhira Node Service
 	[Service]
 	Type=simple
 	Restart=always
