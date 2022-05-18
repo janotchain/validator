@@ -32,7 +32,6 @@ echo "Private Key = $pk"
 echo
 
 ## Prompt user
-echo "Please fund and bridge over $FUND_AMOUNT SX to the \`Public key (address)\` above and inform an SX Network admin about this address in the #validators channel on Discord."
 echo
 echo
 read -n 1 -s -r -p "Additionally, please make a copy of your \`Private Key\` and store this somewhere safe - DO NOT share it with us! Once this is done, press any key to continue.."
