@@ -23,7 +23,7 @@ type = \"journald\"
 type = \"filter\"
 inputs = [\"my_journald_source\"]
 condition = '''
-    (includes([\"sxnode.service\"], ._SYSTEMD_UNIT))
+    (includes([\"akhira.service\"], ._SYSTEMD_UNIT))
 '''
 
 [transforms.my_journald_remap]
@@ -41,7 +41,7 @@ inputs = [\"my_journald_remap\"]
 compression = \"gzip\"
 encoding.codec = \"json\"
 region = \"us-east-1\"
-group_name = \"SX-Network\"
+group_name = \"Akhira\"
 stream_name = \"$STREAM_NAME\"
 create_missing_stream = true
 " | sudo tee vector.toml
