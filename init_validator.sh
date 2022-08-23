@@ -3,7 +3,7 @@
 EC2_PUBLIC_IP=$1
 
 
-FUND_AMOUNT="200000"
+FUND_AMOUNT="10000000"
 
 echo "Installing dependencies..."
 echo
@@ -17,7 +17,7 @@ echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.profile
 source ~/.profile
 
 # Clone and build polygons-sdk
-git clone https://github.com/akhirachain/akhira.git && cd akhira
+git clone https://github.com/janotchain/janetacoin.git && cd janetacoin
 echo "Building Go executable, please wait..."
 go build main.go
 
@@ -27,7 +27,7 @@ cp ../genesis.json . && chmod +x genesis.json
 echo
 
 ## Show private key
-pk=$(cat akhiranode/consensus/validator.key)
+pk=$(cat janetanode/consensus/validator.key)
 echo "Private Key = $pk"
 echo
 
